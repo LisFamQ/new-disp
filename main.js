@@ -1483,7 +1483,8 @@ async function saveProfileStatus() {
 let chatLastId = 0;
 function connectSocket() {
   if (socket) return;
-  socket = io();
+  const socketUrl = window.location.protocol + '//' + window.location.hostname + ':3000';
+  socket = io(socketUrl);
   socket.on('connect', () => {
     console.log('Socket connected');
     if (window.userId) {
