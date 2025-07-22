@@ -15,18 +15,6 @@ app.use(express.static(__dirname + '/public'));
 
 io.on('connection', (socket) => {
   console.log('🔌 Новое подключение');
-
-  socket.on('chat message', (msg) => {
-    socket.broadcast.emit('chat message', msg);
-  });
-
-  socket.on('balance update', (data) => {
-    socket.broadcast.emit('balance update', data);
-  });
-
-  socket.on('rating update', (data) => {
-    socket.broadcast.emit('rating update', data);
-  });
 });
 
 const PORT = 3000;

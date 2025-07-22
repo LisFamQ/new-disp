@@ -1487,20 +1487,6 @@ function connectSocket() {
   socket.on('chat message', msg => {
     appendChatMessage(msg);
   });
-
-  socket.on('balance update', data => {
-    if (typeof data.balance === 'number') {
-      balance = data.balance;
-      updateBalanceUI();
-    }
-  });
-
-  socket.on('rating update', data => {
-    if (typeof data.rating === 'number') {
-      rating = data.rating;
-      updateRatingUI();
-    }
-  });
 }
 
 function appendChatMessage(msg) {
@@ -1578,9 +1564,6 @@ async function saveBalance(change = 0, reason = '') {
     sendHistory('balance', change, reason);
   }
   updateBalanceUI();
-  if (socket) {
-    socket.emit('balance update', { balance });
-  }
   await saveGameData();
 }
 
@@ -1590,9 +1573,6 @@ async function saveRating(change = 0, reason = '') {
     sendHistory('rating', change, reason);
   }
   updateRatingUI();
-  if (socket) {
-    socket.emit('rating update', { rating });
-  }
   await saveGameData();
 }
 
@@ -3941,7 +3921,6 @@ async function getNearbyOSMFeatures() {
 }
 
 async function init() {
-  connectSocket();
   await flushPendingSave();
   loadCartFromStorage();
   await loadCallTypes(); // загружаем calls.json
