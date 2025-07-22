@@ -34,6 +34,7 @@ if (!empty($_SESSION['is_admin']) && isset($_GET['user'])) {
     window.isAdminView = <?php echo $view_user_id !== null ? 'true' : 'false'; ?>;
     window.viewUsername = <?php echo $view_user_id !== null ? json_encode($view_username) : 'null'; ?>;
     window.currentUser = <?php echo isset($_SESSION['user']) ? json_encode($_SESSION['user']) : 'null'; ?>;
+    window.userId = <?php echo isset($_SESSION['user_id']) ? (int)$_SESSION['user_id'] : 'null'; ?>;
     (function(){
       var dark=localStorage.getItem('darkMode')==='true';
       if(dark) document.body.classList.add('dark-mode');
