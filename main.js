@@ -1483,9 +1483,35 @@ async function saveProfileStatus() {
 let chatLastId = 0;
 function connectSocket() {
   if (socket) return;
-  socket = io('http://localhost:3000');
+  socket = io();
+  socket.on('connect', () => {
+    console.log('Socket connected');
+    if (window.userId) {
+      socket.emit('register', { userId: window.userId });
+    }
+  });
+  socket.on('connect_error', err => {
+    console.error('Socket connection error:', err);
+  });
+  socket.on('disconnect', () => {
+    console.log('Socket disconnected');
+  });
   socket.on('chat message', msg => {
     appendChatMessage(msg);
+  });
+
+  socket.on('balance update', data => {
+    if (typeof data.balance === 'number') {
+      balance = data.balance;
+      updateBalanceUI();
+    }
+  });
+
+  socket.on('rating update', data => {
+    if (typeof data.rating === 'number') {
+      rating = data.rating;
+      updateRatingUI();
+    }
   });
 }
 
@@ -1564,6 +1590,9 @@ async function saveBalance(change = 0, reason = '') {
     sendHistory('balance', change, reason);
   }
   updateBalanceUI();
+  if (socket) {
+    socket.emit('balance update', { userId: window.userId, balance });
+  }
   await saveGameData();
 }
 
@@ -1573,6 +1602,9 @@ async function saveRating(change = 0, reason = '') {
     sendHistory('rating', change, reason);
   }
   updateRatingUI();
+  if (socket) {
+    socket.emit('rating update', { userId: window.userId, rating });
+  }
   await saveGameData();
 }
 
@@ -3921,6 +3953,7 @@ async function getNearbyOSMFeatures() {
 }
 
 async function init() {
+  connectSocket();
   await flushPendingSave();
   loadCartFromStorage();
   await loadCallTypes(); // загружаем calls.json
