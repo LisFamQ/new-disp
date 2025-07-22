@@ -1483,8 +1483,10 @@ async function saveProfileStatus() {
 let chatLastId = 0;
 function connectSocket() {
   if (socket) return;
-  const socketUrl = window.location.protocol + '//' + window.location.hostname + ':3000';
-  socket = io(socketUrl);
+  // Connect to the same host and protocol as the page. Nginx proxies
+  // the /socket.io endpoint to the Node.js server running on port 3000,
+  // so we don't specify a custom port here.
+  socket = io();
   socket.on('connect', () => {
     console.log('Socket connected');
     if (window.userId) {
