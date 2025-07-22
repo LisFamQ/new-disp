@@ -1483,34 +1483,9 @@ async function saveProfileStatus() {
 let chatLastId = 0;
 function connectSocket() {
   if (socket) return;
-  const wsProto = location.protocol === 'https:' ? 'wss' : 'ws';
-  const host = location.hostname;
-  socket = io(`${wsProto}://${host}:3000`);
-  socket.on('connect', () => {
-    console.log('Socket connected');
-  });
-  socket.on('connect_error', err => {
-    console.error('Socket connection error:', err);
-  });
-  socket.on('disconnect', () => {
-    console.log('Socket disconnected');
-  });
+  socket = io('http://localhost:3000');
   socket.on('chat message', msg => {
     appendChatMessage(msg);
-  });
-
-  socket.on('balance update', data => {
-    if (typeof data.balance === 'number') {
-      balance = data.balance;
-      updateBalanceUI();
-    }
-  });
-
-  socket.on('rating update', data => {
-    if (typeof data.rating === 'number') {
-      rating = data.rating;
-      updateRatingUI();
-    }
   });
 }
 
@@ -1589,9 +1564,6 @@ async function saveBalance(change = 0, reason = '') {
     sendHistory('balance', change, reason);
   }
   updateBalanceUI();
-  if (socket) {
-    socket.emit('balance update', { balance });
-  }
   await saveGameData();
 }
 
@@ -1601,9 +1573,6 @@ async function saveRating(change = 0, reason = '') {
     sendHistory('rating', change, reason);
   }
   updateRatingUI();
-  if (socket) {
-    socket.emit('rating update', { rating });
-  }
   await saveGameData();
 }
 
@@ -3952,7 +3921,6 @@ async function getNearbyOSMFeatures() {
 }
 
 async function init() {
-  connectSocket();
   await flushPendingSave();
   loadCartFromStorage();
   await loadCallTypes(); // загружаем calls.json
