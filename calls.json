@@ -1,0 +1,740 @@
+{
+  "call1": {
+    "emoji": "🔥",
+    "text": "Пожар в многоэтажке, задымление подъезда",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "ladder_truck",
+      "foam_truck",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 80
+  },
+  "call2": {
+    "emoji": "🔥",
+    "text": "Горит автостоянка, взрываются баки",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "aerial_platform",
+      "special_fire",
+      "patrol"
+    ],
+    "duration": 80
+  },
+  "call3": {
+    "emoji": "🔥",
+    "text": "Пожар в ТЦ, эвакуация 300 человек",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "ladder_truck",
+      "tanker_truck",
+      "tanker_truck",
+      "special_fire",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 110
+  },
+  "call4": {
+    "emoji": "🔥",
+    "text": "Лесной пожар возле посёлка",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "fire_truck",
+      "tanker_truck",
+      "tanker_truck",
+      "special_fire",
+      "dps_car"
+    ],
+    "duration": 90
+  },
+  "call5": {
+    "emoji": "🔥",
+    "text": "Пожар на химзаводе",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "aerial_platform",
+      "tanker_truck",
+      "tanker_truck",
+      "foam_truck",
+      "special_fire",
+      "psp",
+      "patrol"
+    ],
+    "duration": 110
+  },
+  "call6": {
+    "emoji": "🔥",
+    "text": "Задымление в школе, паника",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "ladder_truck",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 80
+  },
+  "call7": {
+    "emoji": "🔥",
+    "text": "Пожар в частном доме, газовые баллоны внутри",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "foam_truck",
+      "dps_car"
+    ],
+    "duration": 70
+  },
+  "call8": {
+    "emoji": "🔥",
+    "text": "Загорелся автобус на трассе",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "ambulance",
+      "ambulance",
+      "dps_car"
+    ],
+    "duration": 80
+  },
+  "call9": {
+    "emoji": "🔥",
+    "text": "Пожар на авторазборке, сильное задымление",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "aerial_platform",
+      "foam_truck",
+      "special_fire",
+      "patrol"
+    ],
+    "duration": 90
+  },
+  "call10": {
+    "emoji": "🔥",
+    "text": "Крупный пожар на складе стройматериалов",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "tanker_truck",
+      "aerial_platform",
+      "special_fire",
+      "foam_truck"
+    ],
+    "duration": 90
+  },
+  "call11": {
+    "emoji": "🚑",
+    "text": "Сердечный приступ в магазине",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 50
+  },
+  "call12": {
+    "emoji": "🚑",
+    "text": "Массовое отравление в кафе",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "ambulance",
+      "rescue_ambulance",
+      "patrol"
+    ],
+    "duration": 70
+  },
+  "call13": {
+    "emoji": "🚑",
+    "text": "ДТП на трассе, есть зажатые пострадавшие",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "ambulance",
+      "rescue_ambulance",
+      "fire_truck",
+      "patrol",
+      "dps_car"
+    ],
+    "duration": 90
+  },
+  "call14": {
+    "emoji": "🚑",
+    "text": "Несовершеннолетний без сознания в парке",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 50
+  },
+  "call15": {
+    "emoji": "🚑",
+    "text": "Роды в лифте, нужно сопровождение в больницу",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "dps_car"
+    ],
+    "duration": 50
+  },
+  "call16": {
+    "emoji": "🚑",
+    "text": "Падение с высоты на стройке",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "rescue_ambulance",
+      "patrol"
+    ],
+    "duration": 60
+  },
+  "call17": {
+    "emoji": "🚑",
+    "text": "Удар током, человек не дышит",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "rescue_ambulance",
+      "patrol"
+    ],
+    "duration": 50
+  },
+  "call18": {
+    "emoji": "🚑",
+    "text": "На стройке завалило рабочих",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "ambulance",
+      "fire_truck",
+      "patrol"
+    ],
+    "duration": 70
+  },
+  "call19": {
+    "emoji": "🚑",
+    "text": "ДТП в центре, зажаты 3 человека",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "ambulance",
+      "fire_truck",
+      "tanker_truck",
+      "dps_car"
+    ],
+    "duration": 80
+  },
+  "call20": {
+    "emoji": "🚑",
+    "text": "Пожилой человек не открывает дверь уже сутки",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "patrol",
+      "fire_truck"
+    ],
+    "duration": 60
+  },
+  "call21": {
+    "emoji": "🚓",
+    "text": "Драка в клубе, есть пострадавшие",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "patrol",
+      "patrol",
+      "ambulance"
+    ],
+    "duration": 60
+  },
+  "call22": {
+    "emoji": "🚓",
+    "text": "Ограбление банка — штурм",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "swat_van",
+      "patrol",
+      "ambulance"
+    ],
+    "duration": 60
+  },
+  "call23": {
+    "emoji": "🚓",
+    "text": "Погоня за угонщиком",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "dps_car",
+      "dps_car",
+      "patrol"
+    ],
+    "duration": 60
+  },
+  "call24": {
+    "emoji": "🚓",
+    "text": "Закладчик, нужно сопровождение кинолога",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "patrol",
+      "k9_unit"
+    ],
+    "duration": 50
+  },
+  "call25": {
+    "emoji": "🚓",
+    "text": "Поиск пропавшего ребёнка",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "patrol",
+      "k9_unit",
+      "fire_truck",
+      "ambulance"
+    ],
+    "duration": 70
+  },
+  "call26": {
+    "emoji": "🚓",
+    "text": "Взлом квартиры — труп внутри",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "patrol",
+      "ambulance",
+      "fire_truck"
+    ],
+    "duration": 60
+  },
+  "call27": {
+    "emoji": "🚓",
+    "text": "Захват заложников в автобусе",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "swat_van",
+      "patrol",
+      "patrol",
+      "ambulance",
+      "dps_car"
+    ],
+    "duration": 80
+  },
+  "call28": {
+    "emoji": "🚓",
+    "text": "Перестрелка в районе гаражей",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "swat_van",
+      "patrol",
+      "ambulance",
+      "ambulance"
+    ],
+    "duration": 70
+  },
+  "call29": {
+    "emoji": "🚓",
+    "text": "Массовая драка возле стадиона",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "patrol",
+      "patrol",
+      "patrol",
+      "ambulance",
+      "ambulance"
+    ],
+    "duration": 80
+  },
+  "call30": {
+    "emoji": "🚓",
+    "text": "Кража на рынке, беглец скрывается в толпе",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "patrol",
+      "patrol",
+      "k9_unit"
+    ],
+    "duration": 60
+  },
+  "call31": {
+    "emoji": "🧯",
+    "text": "Пожар в больнице",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "ladder_truck",
+      "special_fire",
+      "ambulance",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 110
+  },
+  "call32": {
+    "emoji": "🧯",
+    "text": "Взрыв газа в доме",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "tanker_truck",
+      "foam_truck",
+      "special_fire",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 110
+  },
+  "call33": {
+    "emoji": "🧯",
+    "text": "Обрушение потолка в спортзале",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 80
+  },
+  "call34": {
+    "emoji": "🧯",
+    "text": "Наводнение в частном секторе",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "fire_truck",
+      "special_fire",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 80
+  },
+  "call35": {
+    "emoji": "🧯",
+    "text": "Пожар в общежитии, эвакуация 200 человек",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "fire_truck",
+      "ladder_truck",
+      "tanker_truck",
+      "tanker_truck",
+      "foam_truck",
+      "special_fire",
+      "ambulance",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 140
+  },
+  "call36": {
+    "emoji": "🧯",
+    "text": "Авария с бензовозом — угроза взрыва",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "tanker_truck",
+      "aerial_platform",
+      "fire_truck",
+      "special_fire",
+      "dps_car",
+      "ambulance"
+    ],
+    "duration": 90
+  },
+  "call37": {
+    "emoji": "🧯",
+    "text": "Обрушение стены на стройке, 5 пострадавших",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "ambulance",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 90
+  },
+  "call38": {
+    "emoji": "🧯",
+    "text": "Пожар в поезде, станция эвакуирована",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "fire_truck",
+      "tanker_truck",
+      "special_fire",
+      "ambulance",
+      "ambulance",
+      "dps_car"
+    ],
+    "duration": 100
+  },
+  "call39": {
+    "emoji": "🧯",
+    "text": "Оползень, есть завалы и раненые",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "foam_truck",
+      "ambulance",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 90
+  },
+  "call40": {
+    "emoji": "🧯",
+    "text": "Столкновение автобуса и грузовика",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "ambulance",
+      "ambulance",
+      "fire_truck",
+      "tanker_truck",
+      "dps_car"
+    ],
+    "duration": 90
+  },
+  "call41": {
+    "emoji": "🌐",
+    "text": "Пожар в трансформаторной будке",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "aerial_platform"
+    ],
+    "duration": 50
+  },
+  "call42": {
+    "emoji": "🌐",
+    "text": "Обрушение балкона, человек повис на проводах",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "ladder_truck",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 70
+  },
+  "call43": {
+    "emoji": "🌐",
+    "text": "Пожар на рынке ночью",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "tanker_truck",
+      "special_fire",
+      "patrol"
+    ],
+    "duration": 80
+  },
+  "call44": {
+    "emoji": "🌐",
+    "text": "Человек упал в колодец",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "foam_truck",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 70
+  },
+  "call45": {
+    "emoji": "🌐",
+    "text": "Сгорела машина, подозрение на поджог",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "tanker_truck",
+      "patrol"
+    ],
+    "duration": 60
+  },
+  "call46": {
+    "emoji": "🌐",
+    "text": "Пожар в кафе, много дыма и паника",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "foam_truck",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 70
+  },
+  "call47": {
+    "emoji": "🌐",
+    "text": "Летняя жара — массовые обмороки на улице",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "ambulance",
+      "ambulance",
+      "ambulance",
+      "msp",
+      "msp",
+      "patrol"
+    ],
+    "duration": 90
+  },
+  "call48": {
+    "emoji": "🌐",
+    "text": "Выброс аммиака на предприятии",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "aerial_platform",
+      "foam_truck",
+      "special_fire",
+      "patrol",
+      "ambulance"
+    ],
+    "duration": 90
+  },
+  "call49": {
+    "emoji": "🌐",
+    "text": "Пожар в старом кинотеатре",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "ladder_truck",
+      "tanker_truck",
+      "tanker_truck",
+      "special_fire",
+      "ambulance"
+    ],
+    "duration": 90
+  },
+  "call50": {
+    "emoji": "🌐",
+    "text": "Учения по эвакуации в школе",
+    "match": [
+      "building"
+    ],
+    "vehicles": [
+      "fire_truck",
+      "ladder_truck",
+      "ambulance",
+      "patrol"
+    ],
+    "duration": 70
+  }
+}
